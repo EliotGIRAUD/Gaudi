@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang = "fr">
+	<link rel = "stylesheet" href = "CSS.css">
+
+	<head>
+		<meta charset = "UTF-8"/>
+		<title>Antoni Gaudi</title>
+
+<!--------------------------------------------Menu----------------------------------------->
+
+		<section>
+				<ul id = "menu">
+					<li><a href = "#">Menu</a>
+						<ul>
+							<li><a href = "#biographieid">Biographie</a></li>
+							<li><a href = "#oeuvreid">Galerie</a></li>
+							<li><a href = "#taroid">Tarifs et plan du musé</a></li>
+							<li><a href = "#critiqueid">Critique</a></li>
+							<li><a href = "#noteid">Note du commissaire</a></li>
+						</ul>
+					</li>
+				</ul>
+		</section>
+	</head>
+<!-----------------------------------------Fin menu---------------------------------------->
+	
+
+	<body>
+		<h2 id = "toptid"></h2><br/>
+		<a href = "#finished"><img src = "image/Bouton début/Top1-removebg-preview.png" alt = "imagefirst = error" width = "5%"></a><br/>
+		<br/><br/>
+		<h1>32 jours avec Antoni Gaudi</h1>
+		<br></br><br></br>
+
+<!-----------------------------------------------Biographie------------------------------------------>
+
+		<section id = "biographieid" >
+
+			<article>
+				<h2><a href = "#menu"></a><u>Biographie d'Antoni Gaudi :</u></h2>
+				<br/><br/>
+				<div class="form">
+					<p>
+						Antoni Gaudí i Cornet né le 25 juin 1852 à Reus ou Riudoms1 et mort le 10 juin 1926 à Barcelone, est un architecte catalan de nationalité espagnole et principal représentant du modernisme catalan.
+						Son travail a marqué de façon durable l'architecture de la ville de Barcelone et constitue une « contribution créative exceptionnelle […] au développement de l'architecture et des techniques de construction »2.
+						À ce titre, sous le nom d'« Œuvres de Gaudí », sept de ses œuvres ont été inscrites par l'UNESCO au patrimoine mondial de l'Humanité : le parc Güell, le palais Güell, la Casa Milà, la Casa Vicens, la façade de la Nativité et la crypte de la Sagrada Família, la Casa Batlló et la crypte de la Colonia Güell.
+					</p>
+				</div>
+			</article>
+		</section>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+
+<!---------------------------------------------Fin Biographie---------------------------------------->
+
+<!-----------------------------------------------Galerie--------------------------------------------->
+
+		<article class="orgagalerie">
+			<h2 id = "oeuvreid"><a href = "#menu"></a><u>Galerie d'oeuvre d'Antoni Gaudi :</u> </h2>
+			<br/><br/>
+			<script language="javascript">
+	  
+	  
+	  
+				var paquet_image_1 = new Array(9);
+					paquet_image_1[0] = '<img src="image/image_floque/Bellesguard_1900_1909.png" class="img" width="300" height="400">';
+					paquet_image_1[1] = '<img src="image/image_floque/Bodegas_Güell.png" class="img" width="300" height="400">';
+					paquet_image_1[2] = '<img src="image/image_floque/Casa_Batllo_1904_1906.png" class="img" width="300" height="400">';
+					paquet_image_1[3] = '<img src="image/image_floque/Casa_Calvet_1898_1900.png" class="img" width="300" height="400">';
+					paquet_image_1[4] = '<img src="image/image_floque/Casa_De_Los_Botines.png" class="img" width="300" height="400">';
+					paquet_image_1[5] = '<img src="image/image_floque/Casa_El_Capricho_1883_1885.png" class="img" width="300" height="400">';
+					paquet_image_1[6] = '<img src="image/image_floque/Casa_Mila_1906_1910.png" class="img" width="300" height="400">';
+					paquet_image_1[7] = '<img src="image/image_floque/Casa_Vicens_1883_1888.png" class="img" width="300" height="400">';
+					paquet_image_1[8] = '<img src="image/image_floque/Cathédrale_De_Palma.png" class="img" width="300" height="400">';
+
+				var paquet_image_2 = new Array(9);
+					paquet_image_2[0] = '<img src="image/image_floque/Colegio_Teresiano_1888_1889.png" class="img" width="300" height="400">';
+					paquet_image_2[1] = '<img src="image/image_floque/Finca_Güell_1884_1887.png" class="img" width="300" height="400">';
+					paquet_image_2[2] = '<img src="image/image_floque/Finca_Miralles.png" class="img" width="300" height="400">';
+					paquet_image_2[3] = '<img src="image/image_floque/Hôtel_A_New_York.png" class="img" width="300" height="400">';
+					paquet_image_2[4] = '<img src="image/image_floque/La_Crypte_Colonia_Güell_1898_1917.png" class="img" width="300" height="400">';
+					paquet_image_2[5] = '<img src="image/image_floque/Palacio_Gëll_1886_1889.png" class="img" width="300" height="400">';
+					paquet_image_2[6] = '<img src="image/image_floque/Palais_Episcopal_Astorga.png" class="img" width="300" height="400">';
+					paquet_image_2[7] = '<img src="image/image_floque/Park_Güell_1900_1914.png" class="img" width="300" height="400">';
+					paquet_image_2[8] = '<img src="image/image_floque/Sagrada_Familia_1883_1926.png" class="img" width="300" height="400" >';
+			</script>
+			  
+			  
+			  
+			  <script language="javascript">
+			  
+				  console.log("Début du script");
+				  var paquet = sessionStorage.getItem("paquet");
+				  var paquetwrite;
+				  console.log("ancien paquet :" + paquet)
+			  
+				  if ((paquet == "paquet_image_2") || (paquet == null))
+				  {
+					  paquet = "paquet_image_1";
+					  paquetwrite = paquet_image_1;
+					  paquetwrite.sort(function(){return 0.5 - Math.random()})
+					  document.writeln(paquetwrite[0]);
+					  document.writeln(paquetwrite[1]);
+					  document.writeln(paquetwrite[2]);
+					  document.writeln(paquetwrite[3]);
+					  document.writeln(paquetwrite[4]);
+					  document.writeln(paquetwrite[5]);
+					  document.writeln(paquetwrite[6]);
+					  document.writeln(paquetwrite[7]);
+					  document.writeln(paquetwrite[8]);
+				  }
+			  
+				  else if (paquet == "paquet_image_1")
+			  {
+					  paquet = "paquet_image_2";
+					  paquetwrite = paquet_image_2;
+					  paquetwrite.sort(function(){return 0.5 - Math.random()})
+					  document.writeln(paquetwrite[0]);
+					  document.writeln(paquetwrite[1]);
+					  document.writeln(paquetwrite[2]);
+					  document.writeln(paquetwrite[3]);
+					  document.writeln(paquetwrite[4]);
+					  document.writeln(paquetwrite[5]);
+					  document.writeln(paquetwrite[6]);
+					  document.writeln(paquetwrite[7]);
+					  document.writeln(paquetwrite[8]);
+				  }
+			  
+				  else
+				  {
+					  document.writeln("Error 1");
+					  sessionStorage.setItem("paquet","paquet_image_1");
+				  }
+			  
+				  sessionStorage.setItem("paquet", paquet);
+				  console.log("NEW paquet :" + paquet)
+			  
+			  </script>
+		  </article>
+		  <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!---------------------------------------------Fin galerie------------------------------------------>
+
+<!-----------------------------------------------Tarrifs-------------------------------------------->
+
+		<section id = "tarif">
+			<article>
+				<h2 id = "taroid"><a href = "#menu"></a><u>Tarifs et plan du musée :</u></h2>
+				<br/><br/>
+				<div classe = "form">
+					<p>Ce billet permet un accès prioritaire au musée d'Orsay dans la demi-heure suivant l'horaire réservé.
+
+						Inclus l'accès aux collections permanentes, aux expositions temporaires en cours le jour de la visite sous réserve des places disponibles :
+						- Du 20 septembre 2022 au 22 janvier 2023 : Edvard Munch. Un poème de vie, d’amour et de mort
+						En raison de l’affluence dans l’exposition Edvard Munch, seule la réservation d’un créneau horaire dédié garantit l’accès.
+						- Du 18 octobre 2022 au 15 janvier 2023 : Rosa Bonheur (1822-1899)
+						Liste complète des expositions en cours sur musee-orsay.fr
+						
+						Certaines œuvres du musée ne sont actuellement pas visibles.</p>
+				</div>
+				<br/><br/>
+				<section id = "tarifplan">
+					<img src = "image/Prix/Tarifs.png" alt = "imagefirst = error" width = "50%">
+					<img src = "image/Plan/PLANGUIDE ORSAY FAE automne22.jpg" alt = "imagefirst = error" width = "50%">
+				</section>
+			</article>
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		</section>
+
+<!--------------------------------------------Fin Tarrifs----------------------------------------->
+
+<!---------------------------------------------Critique------------------------------------------->
+
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<section id = "critique">
+			<article>
+				<h2 id = "critiqueid"><a href = "#menu"></a><u>Critique du documentaire :</u></h2>
+				<br/><br/>
+				<div classe = "form">
+						<p>La Sagrada Familia est une exception dans l’histoire architecturale.
+							Toujours en cours de construction, l’église draine 5 millions de touristes par an et contribue à la renommée de Barcelone.
+							Prenant comme fil rouge l’analyse du bâtiment, le documentaire revient aussi sur la personnalité de son concepteur : le Catalan Antoni Gaudi, génie de la conception artistique et technique.
+							On y décrypte ses inspirations, et on découvre aussi certains de ses travaux d’étudiants jamais réalisés.
+							Les paroles d’experts se mêlent à de précieuses archives, ainsi qu’à des images virtuelles reconstituant le cabinet de l’architecte, dévasté par un incendie en 1936.</p>
+				</div>
+			</article>
+		</section>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!---------------------------------------------Fin Critique---------------------------------------->
+
+<!---------------------------------------------Note commissaire------------------------------------>
+
+		<section id = "note">
+			<article>
+				<h2 id = "noteid"><a href = "#menu"></a><u>Note du commissaire :</u></h2>
+				<br/><br/>
+				<div classe = "form">
+					<p>Lorsque le directeur du Musée, m’a fait cette demande, particulière je l’avoue, d’une exposition au nom de « 32 jours avec GUSTAVE COURBET » je me suis demandé pourquoi ?
+						Non pas pourquoi moi, excusez mon impertinence, mais ....... pourquoi 32 ? Hasard du calendrier ?
+						Appel déguisé à la France et donc à l’origine de COURBET ? Ce trait d’humour d’ailleurs, aurait été, je crois, apprécié de l’artiste. Ou peut- être est-ce, tout simplement, le chiffre porte-bonheur d’un musée si sympathique ou tout est fait pour offrir à chacun une pause temporelle et artistique ?
+						Mais, après tout, qu’importe ! En me mettant au travail je me suis, tout d’abord, laissé emporter par mes émotions et, associées à COURBET, elles ne manquent pas. En premier lieu, je dois vous le confier, COURBET est la première exposition où mes parents m’ont emmené. Et ce choc devant la puissance de Vercingétorix !
+							j’en ai encore des frissons Permettez-moi deux conseils pour cette exposition : tout d’abord, laisser vos sens s’exprimer, et ensuite, comme pour tout voyage dans l’imaginaire d’un autre, laisser votre joie et votre confiance dans la vie prendre le dessus.
+							Elies Rogent, Directeur de l'École d'Architecture de Barcelone, dit, lors de la remise de son diplôme :Exposition temporaire «32 jours avec Antoni GAUDI CORNET»LGT ST MICHEL - 2022-2023NOTE  DU COMMISSAIRE
+						AP 1Paris, le  05 Septembre 2022« Nous avons accordé le diplôme à un fou ou à un génie. Le temps nous le dira »Antoni disait souvent : « Rien n'est inventé, parce que la nature a déjà tout écrit. L'originalité consiste toujours à revenir aux origines ».
+						Pensez y durant l’exposition C’est à ce voyage dans le quotidien, faussement banal, que vous convie cette exposition. Laissez votre moi cartésien au vestiaire, pour faire émerger votre âme d’enfant, votre sens de la dérision. Mais, en même temps, gardez bien précieusement votre sens du questionnement en éveil.
+						Celui qui vous fait sortir de votre zone de confort, celui qui vous permet d’appréhender une situation sous un angle qui n’est pas forcément celui de la bienséance ou celui attendu.
+						Bref laissez-vous happer par l’univers de cet artiste qui a croqué la vie avec une ferveur indéniable, un dévoreur d’images, de couleurs et d’architectures, malgré une fin de vie dans la solitude et la pauvreté, par ce travailleur infatigable et... puissions-nous nous y retrouver.</p>
+				</div>
+			</article>
+		</section>
+
+<!---------------------------------------------Fin note commissaire-------------------------------->
+
+<!-------------------------------------------Banniere cookies-------------------------------------->
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
+		<script>
+		window.addEventListener('load', function(){
+		window.cookieconsent.initialise({
+		revokeBtn: "<div class='cc-revoke'></div>",
+		type: "opt-in",
+		theme: "classic",
+		palette: {
+			popup: {
+				background: "#445",
+				text: "#eee"
+				},
+			button: {
+				background: "#9f5",
+				text: "#000"
+				}
+			},
+		content: {
+			link: "Сookie policy",
+			href: "https://2gdpr.com/cookies"
+			},
+			onInitialise: function(status) {
+			if(status == cookieconsent.status.allow) myScripts();
+			},
+			onStatusChange: function(status) {
+			if (this.hasConsented()) myScripts();
+			}
+		})
+		});
+
+		function myScripts() {
+
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-00000000-1', 'auto');
+			ga('send', 'pageview');
+
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+				if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+				n.queue=[];t=b.createElement(e);t.async=!0;
+				t.src=v;s=b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t,s)}(window, document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '000000000000000');
+			fbq('track', 'PageView');
+
+		}
+		</script> 
+
+<!-------------------------------------------Fin banniere cookies-------------------------------------->
+
+
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<a href = "#toptid"><img src = "image/Bouton début/Top1.png" alt = "imagelast = error" width = "5%"></a><br/>
+		<h2 id ="finished"></h2><br/>
+		
+<!--------------------------------------------Footer------------------------------------------------------->
+
+
+<footer>
+	<div class="content">
+		<p><a href="https://www.musee-orsay.fr/fr/lettre-information">S'inscrire à la lettre d'information</a></p>
+		<p><a href="https://www.instagram.com/museeorsay/">Instagram</a></p>
+		<p><a href="https://www.musee-orsay.fr/fr/contact/Orsay">Contacter le musée d'Orsay</a></p>
+		<p><a href="https://www.musee-orsay.fr/fr/agenda/expositions/gaudi">Site officiel du musée d'Orsay</a></p>
+		<p><a href="image/Mentions_Legales/Mentions_Legales.pdf">Mentions légales</a></p>
+	</div>
+</footer>
+	</body>
+</html>
+
+<!---------------------------------------------Fin footer------------------------------------------------------->
